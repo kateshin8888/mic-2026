@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
 
@@ -253,48 +253,27 @@
     <section class="section gallery-section" data-animate>
       <div class="container">
         <div class="gallery-head">
-          <h2 class="section-title gallery-title">Presenter Booths <span class="demo-pill">Demo Preview</span></h2>
-          <p class="gallery-desc">A preview of how each presenter's virtual booth will look — click a card to open a
-          sample poster and abstract. These are placeholder entries; real booths go live after registration
-          closes on July 31, 2026.</p>
+          <h2 class="section-title gallery-title">Presenter Booths</h2>
+          <p class="gallery-desc">Meet this year's presenters and their poster topics. Click a card to preview
+          their booth — full abstracts will be published closer to the conference.</p>
         </div>
 
         <div class="booth-grid">
 
-          <div class="booth-card">
+          <div class="booth-card booth-card-featured">
             <button class="booth-open" type="button"
-              data-title="Catalytic Efficiency of Copper-Based Complexes in Green Oxidation"
-              data-authors="Sample Presenter A · Sample Presenter B"
-              data-school="Sample School (Placeholder)"
-              data-abstract="This is placeholder abstract text showing how a presenter's summary will appear in their booth. Real abstracts will replace this content after registration closes.">
-              <span class="booth-thumb" aria-hidden="true">
-                <svg viewBox="0 0 100 70"><rect x="4" y="4" width="92" height="62" rx="4"/><path d="M14 46l16-18 12 12 14-20 22 26" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="30" cy="20" r="4"/></svg>
-              </span>
-              <span class="booth-body">
-                <span class="booth-demo-tag">Sample</span>
-                <span class="booth-card-title">Catalytic Efficiency of Copper-Based Complexes in Green Oxidation</span>
-                <span class="booth-card-authors">Sample Presenter A · Sample Presenter B</span>
-              </span>
-            </button>
-            <span class="booth-ribbon" aria-hidden="true"><span class="ribbon-seal">★</span></span>
-            <button class="booth-bookmark" type="button" aria-pressed="false" aria-label="Save this booth" data-bookmark>
-              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 4h12a1 1 0 0 1 1 1v15l-7-4-7 4V5a1 1 0 0 1 1-1Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
-            </button>
-          </div>
-
-          <div class="booth-card">
-            <button class="booth-open" type="button"
-              data-title="Biodegradable Polymer Films from Citrus Peel Waste"
-              data-authors="Sample Presenter C"
-              data-school="Sample School (Placeholder)"
-              data-abstract="This is placeholder abstract text showing how a presenter's summary will appear in their booth. Real abstracts will replace this content after registration closes.">
+              data-tag="Faculty Presenter"
+              data-title="Synthesis of Benzimidazol-2-ones by Oxidative Cyclization Ring Closure of Amido-Urea Precursors"
+              data-authors="Codruța Popescu"
+              data-school="Romania · Assistant Professor, University of Bucharest"
+              data-abstract="Full abstract to be published closer to the conference.">
               <span class="booth-thumb" aria-hidden="true">
                 <svg viewBox="0 0 100 70"><rect x="4" y="4" width="92" height="62" rx="4"/><circle cx="50" cy="35" r="16" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M50 19v-6M50 51v6M66 35h6M28 35h-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
               </span>
               <span class="booth-body">
-                <span class="booth-demo-tag">Sample</span>
-                <span class="booth-card-title">Biodegradable Polymer Films from Citrus Peel Waste</span>
-                <span class="booth-card-authors">Sample Presenter C</span>
+                <span class="booth-tag booth-tag-featured">Faculty Presenter</span>
+                <span class="booth-card-title">Synthesis of Benzimidazol-2-ones by Oxidative Cyclization Ring Closure of Amido-Urea Precursors</span>
+                <span class="booth-card-authors">Codruța Popescu · Romania</span>
               </span>
             </button>
             <button class="booth-bookmark" type="button" aria-pressed="false" aria-label="Save this booth" data-bookmark>
@@ -304,38 +283,16 @@
 
           <div class="booth-card">
             <button class="booth-open" type="button"
-              data-title="Colorimetric Detection of Heavy Metals Using Plant Extracts"
-              data-authors="Sample Presenter D · Sample Presenter E"
-              data-school="Sample School (Placeholder)"
-              data-abstract="This is placeholder abstract text showing how a presenter's summary will appear in their booth. Real abstracts will replace this content after registration closes.">
-              <span class="booth-thumb" aria-hidden="true">
-                <svg viewBox="0 0 100 70"><rect x="4" y="4" width="92" height="62" rx="4"/><rect x="20" y="14" width="8" height="42" rx="2" fill="none" stroke="currentColor" stroke-width="2.2"/><rect x="34" y="24" width="8" height="32" rx="2" fill="none" stroke="currentColor" stroke-width="2.2"/><rect x="48" y="10" width="8" height="46" rx="2" fill="none" stroke="currentColor" stroke-width="2.2"/><rect x="62" y="30" width="8" height="26" rx="2" fill="none" stroke="currentColor" stroke-width="2.2"/></svg>
-              </span>
-              <span class="booth-body">
-                <span class="booth-demo-tag">Sample</span>
-                <span class="booth-card-title">Colorimetric Detection of Heavy Metals Using Plant Extracts</span>
-                <span class="booth-card-authors">Sample Presenter D · Sample Presenter E</span>
-              </span>
-            </button>
-            <span class="booth-ribbon" aria-hidden="true"><span class="ribbon-seal">★</span></span>
-            <button class="booth-bookmark" type="button" aria-pressed="false" aria-label="Save this booth" data-bookmark>
-              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 4h12a1 1 0 0 1 1 1v15l-7-4-7 4V5a1 1 0 0 1 1-1Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
-            </button>
-          </div>
-
-          <div class="booth-card">
-            <button class="booth-open" type="button"
-              data-title="Electrochemical Sensing of Glucose with Modified Carbon Electrodes"
-              data-authors="Sample Presenter F"
-              data-school="Sample School (Placeholder)"
-              data-abstract="This is placeholder abstract text showing how a presenter's summary will appear in their booth. Real abstracts will replace this content after registration closes.">
+              data-title="Evaluating the Efficiency of a Low-Cost Silicon MOSFET DC-AC Inverter"
+              data-authors="Chenning Liu"
+              data-school="United Kingdom"
+              data-abstract="Full abstract to be published closer to the conference.">
               <span class="booth-thumb" aria-hidden="true">
                 <svg viewBox="0 0 100 70"><rect x="4" y="4" width="92" height="62" rx="4"/><path d="M12 40h14l8-22 10 40 8-28 10 10h20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </span>
               <span class="booth-body">
-                <span class="booth-demo-tag">Sample</span>
-                <span class="booth-card-title">Electrochemical Sensing of Glucose with Modified Carbon Electrodes</span>
-                <span class="booth-card-authors">Sample Presenter F</span>
+                <span class="booth-card-title">Evaluating the Efficiency of a Low-Cost Silicon MOSFET DC-AC Inverter</span>
+                <span class="booth-card-authors">Chenning Liu · United Kingdom</span>
               </span>
             </button>
             <button class="booth-bookmark" type="button" aria-pressed="false" aria-label="Save this booth" data-bookmark>
@@ -345,17 +302,16 @@
 
           <div class="booth-card">
             <button class="booth-open" type="button"
-              data-title="Thermal Stability of Bio-Based Epoxy Resins"
-              data-authors="Sample Presenter G · Sample Presenter H"
-              data-school="Sample School (Placeholder)"
-              data-abstract="This is placeholder abstract text showing how a presenter's summary will appear in their booth. Real abstracts will replace this content after registration closes.">
+              data-title="Synthesis of Azo Dyes Containing Iodine and Study of Their Color Properties Depending on pH"
+              data-authors="Mikhail Panin"
+              data-school="Russian Federation"
+              data-abstract="Full abstract to be published closer to the conference.">
               <span class="booth-thumb" aria-hidden="true">
-                <svg viewBox="0 0 100 70"><rect x="4" y="4" width="92" height="62" rx="4"/><path d="M50 12l30 46H20Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M38 44h24" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                <svg viewBox="0 0 100 70"><rect x="4" y="4" width="92" height="62" rx="4"/><path d="M14 46l16-18 12 12 14-20 22 26" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="30" cy="20" r="4"/></svg>
               </span>
               <span class="booth-body">
-                <span class="booth-demo-tag">Sample</span>
-                <span class="booth-card-title">Thermal Stability of Bio-Based Epoxy Resins</span>
-                <span class="booth-card-authors">Sample Presenter G · Sample Presenter H</span>
+                <span class="booth-card-title">Synthesis of Azo Dyes Containing Iodine and Study of Their Color Properties Depending on pH</span>
+                <span class="booth-card-authors">Mikhail Panin · Russian Federation</span>
               </span>
             </button>
             <button class="booth-bookmark" type="button" aria-pressed="false" aria-label="Save this booth" data-bookmark>
@@ -365,17 +321,149 @@
 
           <div class="booth-card">
             <button class="booth-open" type="button"
-              data-title="pH-Responsive Hydrogels for Controlled Drug Release"
-              data-authors="Sample Presenter I"
-              data-school="Sample School (Placeholder)"
-              data-abstract="This is placeholder abstract text showing how a presenter's summary will appear in their booth. Real abstracts will replace this content after registration closes.">
+              data-title="Beauty of Fourier Epicycles: Drawing the World with Rotating Circles"
+              data-authors="Minjoung Kim"
+              data-school="Republic of Korea"
+              data-abstract="Full abstract to be published closer to the conference.">
               <span class="booth-thumb" aria-hidden="true">
                 <svg viewBox="0 0 100 70"><rect x="4" y="4" width="92" height="62" rx="4"/><circle cx="36" cy="35" r="12" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="62" cy="24" r="7" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="66" cy="46" r="9" fill="none" stroke="currentColor" stroke-width="2.2"/></svg>
               </span>
               <span class="booth-body">
-                <span class="booth-demo-tag">Sample</span>
-                <span class="booth-card-title">pH-Responsive Hydrogels for Controlled Drug Release</span>
-                <span class="booth-card-authors">Sample Presenter I</span>
+                <span class="booth-card-title">Beauty of Fourier Epicycles: Drawing the World with Rotating Circles</span>
+                <span class="booth-card-authors">Minjoung Kim · Republic of Korea</span>
+              </span>
+            </button>
+            <button class="booth-bookmark" type="button" aria-pressed="false" aria-label="Save this booth" data-bookmark>
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 4h12a1 1 0 0 1 1 1v15l-7-4-7 4V5a1 1 0 0 1 1-1Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+
+          <div class="booth-card">
+            <button class="booth-open" type="button"
+              data-title="Evaluating Safer Urban Areas Through Biomonitoring of Zinc and Lead in Tree Leaves"
+              data-authors="Sofiia Puskova"
+              data-school="Russian Federation"
+              data-abstract="Full abstract to be published closer to the conference.">
+              <span class="booth-thumb" aria-hidden="true">
+                <svg viewBox="0 0 100 70"><rect x="4" y="4" width="92" height="62" rx="4"/><rect x="20" y="14" width="8" height="42" rx="2" fill="none" stroke="currentColor" stroke-width="2.2"/><rect x="34" y="24" width="8" height="32" rx="2" fill="none" stroke="currentColor" stroke-width="2.2"/><rect x="48" y="10" width="8" height="46" rx="2" fill="none" stroke="currentColor" stroke-width="2.2"/><rect x="62" y="30" width="8" height="26" rx="2" fill="none" stroke="currentColor" stroke-width="2.2"/></svg>
+              </span>
+              <span class="booth-body">
+                <span class="booth-card-title">Evaluating Safer Urban Areas Through Biomonitoring of Zinc and Lead in Tree Leaves</span>
+                <span class="booth-card-authors">Sofiia Puskova · Russian Federation</span>
+              </span>
+            </button>
+            <button class="booth-bookmark" type="button" aria-pressed="false" aria-label="Save this booth" data-bookmark>
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 4h12a1 1 0 0 1 1 1v15l-7-4-7 4V5a1 1 0 0 1 1-1Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+
+          <div class="booth-card">
+            <button class="booth-open" type="button"
+              data-title="Journey Through the Brain: Fetal Neuronal Migration"
+              data-authors="Sojoung Lee"
+              data-school="Republic of Korea"
+              data-abstract="Full abstract to be published closer to the conference.">
+              <span class="booth-thumb" aria-hidden="true">
+                <svg viewBox="0 0 100 70"><rect x="4" y="4" width="92" height="62" rx="4"/><circle cx="50" cy="35" r="16" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M50 19v-6M50 51v6M66 35h6M28 35h-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+              </span>
+              <span class="booth-body">
+                <span class="booth-card-title">Journey Through the Brain: Fetal Neuronal Migration</span>
+                <span class="booth-card-authors">Sojoung Lee · Republic of Korea</span>
+              </span>
+            </button>
+            <button class="booth-bookmark" type="button" aria-pressed="false" aria-label="Save this booth" data-bookmark>
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 4h12a1 1 0 0 1 1 1v15l-7-4-7 4V5a1 1 0 0 1 1-1Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+
+          <div class="booth-card">
+            <button class="booth-open" type="button"
+              data-title="Are Graph Neural Networks a Post-QSAR Approach? A Critical Evaluation of Whether GNNs Represent a New Paradigm in Molecular Property Prediction"
+              data-authors="Sophie Zhang"
+              data-school="United Kingdom"
+              data-abstract="Full abstract to be published closer to the conference.">
+              <span class="booth-thumb" aria-hidden="true">
+                <svg viewBox="0 0 100 70"><rect x="4" y="4" width="92" height="62" rx="4"/><path d="M12 40h14l8-22 10 40 8-28 10 10h20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="booth-body">
+                <span class="booth-card-title">Are Graph Neural Networks a Post-QSAR Approach? A Critical Evaluation of Whether GNNs Represent a New Paradigm in Molecular Property Prediction</span>
+                <span class="booth-card-authors">Sophie Zhang · United Kingdom</span>
+              </span>
+            </button>
+            <button class="booth-bookmark" type="button" aria-pressed="false" aria-label="Save this booth" data-bookmark>
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 4h12a1 1 0 0 1 1 1v15l-7-4-7 4V5a1 1 0 0 1 1-1Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+
+          <div class="booth-card">
+            <button class="booth-open" type="button"
+              data-title="Design of Metallocages by Combining Mannich and Schiff Reactions"
+              data-authors="Ștefan Dimitriu"
+              data-school="Romania · IESO 2019 Silver Medal · IChO 2021 Silver Medal"
+              data-abstract="Full abstract to be published closer to the conference.">
+              <span class="booth-thumb" aria-hidden="true">
+                <svg viewBox="0 0 100 70"><rect x="4" y="4" width="92" height="62" rx="4"/><path d="M50 12l30 46H20Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M38 44h24" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+              </span>
+              <span class="booth-body">
+                <span class="booth-card-title">Design of Metallocages by Combining Mannich and Schiff Reactions</span>
+                <span class="booth-card-authors">Ștefan Dimitriu · Romania</span>
+              </span>
+            </button>
+            <button class="booth-bookmark" type="button" aria-pressed="false" aria-label="Save this booth" data-bookmark>
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 4h12a1 1 0 0 1 1 1v15l-7-4-7 4V5a1 1 0 0 1 1-1Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+
+          <div class="booth-card">
+            <button class="booth-open" type="button"
+              data-title="Computational Investigation of Tetraborane(8) Lewis Base Adducts Thermochemistry and Dynamics"
+              data-authors="Ștefan-Ionel Dumitrescu"
+              data-school="Romania · IBO 2022 Bronze, 2023 Silver · IESO 2022 Gold · IOL 2023 Gold · IChO 2024 Silver"
+              data-abstract="Full abstract to be published closer to the conference.">
+              <span class="booth-thumb" aria-hidden="true">
+                <svg viewBox="0 0 100 70"><rect x="4" y="4" width="92" height="62" rx="4"/><path d="M50 12l30 46H20Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M38 44h24" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+              </span>
+              <span class="booth-body">
+                <span class="booth-card-title">Computational Investigation of Tetraborane(8) Lewis Base Adducts Thermochemistry and Dynamics</span>
+                <span class="booth-card-authors">Ștefan-Ionel Dumitrescu · Romania</span>
+              </span>
+            </button>
+            <button class="booth-bookmark" type="button" aria-pressed="false" aria-label="Save this booth" data-bookmark>
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 4h12a1 1 0 0 1 1 1v15l-7-4-7 4V5a1 1 0 0 1 1-1Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+
+          <div class="booth-card">
+            <button class="booth-open" type="button"
+              data-title="How Can Cardiac Memory Challenge the Diagnostic Reliability of ECGs?"
+              data-authors="Rachel Liu"
+              data-school="United Kingdom"
+              data-abstract="Full abstract to be published closer to the conference.">
+              <span class="booth-thumb" aria-hidden="true">
+                <svg viewBox="0 0 100 70"><rect x="4" y="4" width="92" height="62" rx="4"/><path d="M12 40h14l8-22 10 40 8-28 10 10h20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="booth-body">
+                <span class="booth-card-title">How Can Cardiac Memory Challenge the Diagnostic Reliability of ECGs?</span>
+                <span class="booth-card-authors">Rachel Liu · United Kingdom</span>
+              </span>
+            </button>
+            <button class="booth-bookmark" type="button" aria-pressed="false" aria-label="Save this booth" data-bookmark>
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 4h12a1 1 0 0 1 1 1v15l-7-4-7 4V5a1 1 0 0 1 1-1Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+
+          <div class="booth-card">
+            <button class="booth-open" type="button"
+              data-title="Use of Lanthanum Aluminates as Precursors for the Production of Thermal Barrier Materials"
+              data-authors="Valeriia Romankina"
+              data-school="Russian Federation"
+              data-abstract="Full abstract to be published closer to the conference.">
+              <span class="booth-thumb" aria-hidden="true">
+                <svg viewBox="0 0 100 70"><rect x="4" y="4" width="92" height="62" rx="4"/><path d="M50 12l30 46H20Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M38 44h24" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+              </span>
+              <span class="booth-body">
+                <span class="booth-card-title">Use of Lanthanum Aluminates as Precursors for the Production of Thermal Barrier Materials</span>
+                <span class="booth-card-authors">Valeriia Romankina · Russian Federation</span>
               </span>
             </button>
             <button class="booth-bookmark" type="button" aria-pressed="false" aria-label="Save this booth" data-bookmark>
@@ -406,13 +494,48 @@
     <section class="section page-head" data-animate>
       <div class="container">
         <h1 class="page-title">Agenda</h1>
-        <p class="page-lede">Tuesday, August 18, 2026 · Minjok Leadership Academy Gymnasium</p>
-        <p class="agenda-note">Tentative schedule — subject to change. A finalized agenda will be shared with confirmed presenters.</p>
+        <p class="page-lede">Tuesday, August 18, 2026 · Part of IChTO Tournament Week (Aug 15–19)</p>
       </div>
     </section>
 
     <section class="section" data-animate>
       <div class="container">
+        <h2 class="section-title">Tuesday, August 18 at a Glance</h2>
+        <p class="agenda-source-note">From the official IChTO week schedule — see the full 5-day agenda at
+        <a href="https://ichto2026.com" target="_blank" rel="noopener">ichto2026.com</a>.</p>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <span class="timeline-time">08:00</span>
+            <div class="timeline-content"><h3>Transport</h3><p>Welli Hilli → KMLA (for IChTO tournament participants).</p></div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-time">09:00</span>
+            <div class="timeline-content"><h3>IChTO Final</h3><p>Auditorium — tournament final round.</p></div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-time">13:00</span>
+            <div class="timeline-content"><h3>Lunch</h3></div>
+          </li>
+          <li class="timeline-item timeline-item-featured">
+            <span class="timeline-time">14:00</span>
+            <div class="timeline-content"><h3>MIC Poster Presentation</h3><p>Our event — Minjok International Conference. Minjok Leadership Academy Gymnasium.</p></div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-time">16:30</span>
+            <div class="timeline-content"><h3>IChTO Closing Ceremony</h3><p>Gymnasium.</p></div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-time">17:30</span>
+            <div class="timeline-content"><h3>Transport</h3><p>KMLA → Welli Hilli.</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-alt" data-animate>
+      <div class="container">
+        <h2 class="section-title">Inside the Poster Session <span class="agenda-note">Tentative</span></h2>
+        <p class="agenda-source-note" style="text-align:center">14:00–16:30 · Minjok Leadership Academy Gymnasium — internal flow not yet finalized.</p>
         <ol class="timeline">
           <li class="timeline-item">
             <span class="timeline-time">14:00</span>
@@ -453,7 +576,7 @@
     <svg viewBox="0 0 100 70"><rect x="4" y="4" width="92" height="62" rx="4"/><path d="M14 46l16-18 12 12 14-20 22 26" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="30" cy="20" r="4"/></svg>
   </div>
   <div class="modal-body">
-    <span class="booth-demo-tag" id="booth-modal-tag">Sample</span>
+    <span class="booth-tag booth-tag-featured" id="booth-modal-tag" hidden></span>
     <h3 id="booth-modal-title"></h3>
     <p class="modal-authors" id="booth-modal-authors"></p>
     <p class="modal-school" id="booth-modal-school"></p>
@@ -469,6 +592,6 @@
   </div>
 </footer>
 
-<script src="script.js?v=2"></script>
+<script src="script.js?v=3"></script>
 </body>
 </html>

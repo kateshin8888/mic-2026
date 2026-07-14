@@ -134,6 +134,7 @@
 
   if (boothModal) {
     var modalThumb = document.getElementById('booth-modal-thumb');
+    var modalTag = document.getElementById('booth-modal-tag');
     var modalTitle = document.getElementById('booth-modal-title');
     var modalAuthors = document.getElementById('booth-modal-authors');
     var modalSchool = document.getElementById('booth-modal-school');
@@ -143,6 +144,9 @@
     document.querySelectorAll('.booth-open').forEach(function (btn) {
       btn.addEventListener('click', function () {
         lastBoothTrigger = btn;
+        var tag = btn.getAttribute('data-tag') || '';
+        modalTag.textContent = tag;
+        modalTag.hidden = !tag;
         modalTitle.textContent = btn.getAttribute('data-title') || '';
         modalAuthors.textContent = btn.getAttribute('data-authors') || '';
         modalSchool.textContent = btn.getAttribute('data-school') || '';

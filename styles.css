@@ -590,17 +590,6 @@ a:focus-visible, button:focus-visible, iframe:focus-visible {
   color: #fff;
   margin-bottom: var(--space-1);
 }
-.demo-pill {
-  font-family: var(--font-sans);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--color-primary-dark);
-  background: var(--color-accent-light);
-  padding: 5px 12px;
-  border-radius: 999px;
-}
 .gallery-desc { color: rgba(255,255,255,0.72); font-size: 15px; }
 
 .booth-grid {
@@ -628,6 +617,8 @@ a:focus-visible, button:focus-visible, iframe:focus-visible {
 }
 .booth-open:hover, .booth-open:focus-visible { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
 
+.booth-card-featured .booth-open { border: 2px solid var(--color-accent); box-shadow: var(--shadow-lg); }
+
 .booth-thumb {
   display: flex;
   align-items: center;
@@ -640,7 +631,7 @@ a:focus-visible, button:focus-visible, iframe:focus-visible {
 .booth-thumb rect:first-child { fill: none; stroke: var(--color-border); stroke-width: 1.5; }
 
 .booth-body { padding: var(--space-2) var(--space-2) var(--space-3); display: flex; flex-direction: column; gap: 6px; }
-.booth-demo-tag {
+.booth-tag {
   align-self: flex-start;
   font-size: 11px;
   font-weight: 700;
@@ -651,6 +642,7 @@ a:focus-visible, button:focus-visible, iframe:focus-visible {
   padding: 3px 10px;
   border-radius: 999px;
 }
+.booth-tag-featured { color: #fff; background: var(--color-accent); }
 .booth-card-title { font-family: var(--font-serif); font-weight: 600; font-size: 17px; color: var(--color-fg); line-height: 1.3; }
 .booth-card-authors { font-size: 13.5px; color: var(--color-fg-muted); }
 
@@ -675,22 +667,6 @@ a:focus-visible, button:focus-visible, iframe:focus-visible {
 .booth-bookmark[aria-pressed="true"] { color: var(--color-accent); }
 .booth-bookmark[aria-pressed="true"] svg path { fill: currentColor; }
 .booth-bookmark:active { transform: scale(0.92); }
-
-.booth-ribbon {
-  position: absolute;
-  top: -6px;
-  left: 14px;
-  z-index: 2;
-  width: 30px;
-  height: 44px;
-  background: #B91C1C;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 78%, 0 100%);
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding-top: 6px;
-}
-.ribbon-seal { color: var(--color-accent-light); font-size: 14px; line-height: 1; }
 
 @media (max-width: 640px) {
   .booth-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
@@ -810,6 +786,19 @@ a:focus-visible, button:focus-visible, iframe:focus-visible {
 }
 .timeline-content h3 { font-size: 17px; margin-bottom: 2px; }
 .timeline-content p { color: var(--color-fg-muted); font-size: 14.5px; margin: 0; }
+
+.agenda-source-note { max-width: 720px; margin: -8px auto var(--space-4); font-size: 14px; color: var(--color-fg-muted); }
+.agenda-source-note a { color: var(--color-accent); text-decoration: underline; }
+
+.timeline-item-featured .timeline-content {
+  background: rgba(29,78,216,0.08);
+  border-radius: var(--radius-sm);
+  padding: 10px var(--space-2);
+  margin-left: -2px;
+}
+.timeline-item-featured .timeline-content::before { box-shadow: 0 0 0 3px var(--color-accent); }
+.timeline-item-featured .timeline-time { color: var(--color-accent); }
+.timeline-item-featured h3 { color: var(--color-accent); }
 
 @media (max-width: 560px) {
   .timeline::before { left: 46px; }
